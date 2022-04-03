@@ -1,7 +1,8 @@
 # Konfiguracja dockera na systemie windows 10//11 wraz z obrazem ROS’a
 
 1. Aby poprawnie zbudować obraz na dockerze potrzebne będzie zainstalowanie WSL-Windows Subsystem for Linux w wersji drugiej.
-- Instalacja wsl - Otwórz PowerShell lub Command Prompt (cmd) jako administrator i wprowadź następującą komendę <\br>
+- Instalacja wsl - Otwórz PowerShell lub Command Prompt (cmd) jako administrator i wprowadź następującą komendę
+
 `wsl  --install`
 
 Następnie restartujemy komputer
@@ -25,7 +26,8 @@ Dockera pobieramy z pod tego linku https://docs.docker.com/desktop/windows/insta
 i instalujemy.
 
 3. Pobieranie obrazu Ubuntu z ROS’em.
-Otwieramy **Docker Desktop**. <\br>
+Otwieramy **Docker Desktop**.
+
 W PowerShellu wpisujemy: 
 
 `docker pull osrf/ros:foxy-desktop`
