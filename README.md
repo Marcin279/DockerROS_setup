@@ -1,6 +1,6 @@
 # Konfiguracja dockera na systemie windows 10//11 wraz z obrazem ROS’a
 
-1. Aby poprawnie zbudować obraz na dockerze potrzebne będzie zainstalowanie WSL-Windows Subsystem for Linux w wersji drugiej.
+### 1. Aby poprawnie zbudować obraz na dockerze potrzebne będzie zainstalowanie WSL-Windows Subsystem for Linux w wersji drugiej.
 - Instalacja wsl - Otwórz PowerShell lub Command Prompt (cmd) jako administrator i wprowadź następującą komendę
 
 `wsl  --install`
@@ -18,14 +18,14 @@ Jeżeli posiadamy już WSL w wersji 1 należy go zaktualizować do wersji drugie
 
 `wsl --set-version Ubuntu-20.04 2`
 
-2. Instalacja Docker Desktop na windows 10/11 
+### 2. Instalacja Docker Desktop na windows 10/11 
 
 Aby móc wirtualizować obrazy na dockerze należy włączyć taką możliwość ustawieniach BIOS’u.
 
 Dockera pobieramy z pod tego linku https://docs.docker.com/desktop/windows/install/
 i instalujemy.
 
-3. Pobieranie obrazu Ubuntu z ROS’em.
+### 3. Pobieranie obrazu Ubuntu z ROS’em.
 Otwieramy **Docker Desktop**.
 
 W PowerShellu wpisujemy: 
@@ -50,7 +50,7 @@ Po zainstalowaniu uruchamiamy program XLaunch i dokonujemy konfiguracji, wszystk
 
 ## Uruchamianie Obrazu
 
-5. Po zainstalowaniu narzędzia możemy przejść do uruchamiania obrazu ROS’a.
+### 5. Po zainstalowaniu narzędzia możemy przejść do uruchamiania obrazu ROS’a.
 
 
 `docker run -it --env DISPLAY=host.docker.internal:0.0 osrf/ros:foxy-desktop bash`
@@ -62,7 +62,7 @@ Za każdym uruchomieniem tej komendy będzie tworzona nowa aplikacja/kontener
 ![Docker container](img/docker_konterery.png)
 
 
-6. Ładowanie setupu ROS’a
+### 6. Ładowanie setupu ROS’a
 
 `echo source "/opt/ros/foxy/setup.bash" >> ~/.bashrc`
 
@@ -70,7 +70,7 @@ Za każdym uruchomieniem tej komendy będzie tworzona nowa aplikacja/kontener
 
 wczytując taki setup do bashrc sprawiamy, że za każdym razem gdy będziemy otwierać nowy terminal te ustawienia zostaną wczytane automatycznie.
 
-7. Testowanie utworzonego obrazu
+### 7. Testowanie utworzonego obrazu
 
 Aby przetestować czy wszystko działa poprawnie należy wpisać następującą komendę:
 
