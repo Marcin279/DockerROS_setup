@@ -64,7 +64,7 @@ Za każdym uruchomieniem tej komendy będzie tworzona nowa aplikacja/kontener
 
 ### 6. Ładowanie setupu ROS’a
 
-`echo source "/opt/ros/foxy/setup.bash" >> ~/.bashrc`
+`echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc`
 
 ![Docker container](img/loadowanie_setupu_ROS.png)
 
